@@ -1,1 +1,46 @@
 # b-appointment
+## Definitions
+* [npm](http://coolestguidesontheplanet.com/installing-node-js-on-osx-10-10-yosemite/) - stand for Node Package Manager
+* [bower](http://bower.io/) - Javascript package manager which define version and retrieve dependencies ( This is similar to maven package manager, pom.xml). Bower js is used for managing front end components like html,css,js etc. 
+* [Grunt](http://gruntjs.com/getting-started) - task based command line build tool for Javascript projects (similar to ANT)
+* package.json - This file is used by npm to store metadata for projects published as npm modules. (similar to build.xml)
+* Gruntfile.js - Configure or define tasks and load Grunt plugins
+* bower.json - Bower keeps track of these packages in a manifest file
+
+## Setup
+* Node.js - refer [Installing node.js on OSX 10.10 Yosemite](http://coolestguidesontheplanet.com/installing-node-js-on-osx-10-10-yosemite/)
+* [Npm](https://www.npmjs.com/) - npm is available once you install nodejs
+Interactively create a package.json
+```
+> npm init
+```
+* [Bower](http://bower.io/)
+```
+> npm install -g bower (-g stand to indicate that the installation is done globally)
+> bower install <package>
+```
+install package and add it to bower.json dependencies
+```
+> bower install <package> --save
+```
+install package and add it to bower.json devDependencies
+```
+> bower install <package> --save-dev
+```
+Interactively create a [bower.json](http://bower.io/docs/creating-packages/#bowerjson)
+```
+> bower init
+```
+* [Grunt](http://code.tutsplus.com/tutorials/meet-grunt-the-build-tool-for-javascript--net-24856)
+Installing the CLI
+```
+> npm install -g grunt-cli (-g stand to indicate that the installation is done globally)
+```
+Install the latest version of Grunt into project folder, adding it to the package.json devDependencies:
+```
+> npm install grunt --save-dev	
+```
+Adding gruntplugins or other modules (i.e. installing the JSHint task module)
+```
+> npm install grunt-contrib-jshint --save-dev
+```
