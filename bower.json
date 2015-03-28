@@ -1,0 +1,19 @@
+{
+  "name": "b-appointment",
+  "version": "0.0.0",
+  "homepage": "https://github.com/nadisha/b-appointment",
+  "authors": [
+    "Nadisha Bandara <nadisha.bandara@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}
