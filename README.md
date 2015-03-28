@@ -7,6 +7,12 @@
 * Gruntfile.js - Configure or define tasks and load Grunt plugins
 * bower.json - Bower keeps track of these packages in a manifest file
 
+## Technologies
+* Nodejs
+* MongoDB
+* Angular
+* ExpressJs
+
 ## Setup
 * Node.js - refer [Installing node.js on OSX 10.10 Yosemite](http://coolestguidesontheplanet.com/installing-node-js-on-osx-10-10-yosemite/)
 * [Npm](https://www.npmjs.com/) - npm is available once you install nodejs
@@ -61,3 +67,19 @@ Adding gruntplugins or other modules (i.e. installing the JSHint task module)
 ```
 > npm install grunt-contrib-jshint --save-dev
 ```
+
+## Angular
+[Install as bower module](https://github.com/angular/bower-angular)
+```
+> bower install angular --save
+```
+
+## [MEAN](http://mean.io/)
+Stands for Mongo, Express, Angular and Node
+
+## [Mongoose](http://mongoosejs.com) MongoDB ODM
+
+## HTTP request logger  - [morgan](https://www.npmjs.com/package/morgan)
+
+## Reference 
+* [Sample Demo](https://github.com/scotch-io/node-todo/tree/tut1-starter)

@@ -2,7 +2,7 @@
   "name": "b-appointment",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "directories": {
     "test": "test"
   },
@@ -28,5 +28,10 @@
     "grunt-contrib-qunit": "~0.5.2",
     "grunt-contrib-uglify": "~0.5.0",
     "grunt-contrib-watch": "~0.6.1"
+  },
+  "dependencies": {
+    "express": "^4.12.3",
+    "mongoose": "^4.0.0",
+    "morgan": "^1.5.2"
   }
 }
