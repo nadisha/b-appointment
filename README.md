@@ -14,10 +14,20 @@ Interactively create a package.json
 ```
 > npm init
 ```
+[Install Bower packages via npm](https://www.npmjs.com/package/grunt-bower-installer)
+```
+> npm install grunt-bower-installer --save-dev
+Add following line to Gruntfile.js
+grunt.loadNpmTasks('grunt-bower-installer');
+```
 * [Bower](http://bower.io/)
 ```
 > npm install -g bower (-g stand to indicate that the installation is done globally)
 > bower install <package>
+```
+Interactively create a [bower.json](http://bower.io/docs/creating-packages/#bowerjson)
+```
+> bower init
 ```
 install package and add it to bower.json dependencies
 ```
@@ -27,14 +37,21 @@ install package and add it to bower.json devDependencies
 ```
 > bower install <package> --save-dev
 ```
-Interactively create a [bower.json](http://bower.io/docs/creating-packages/#bowerjson)
-```
-> bower init
-```
 * [Grunt](http://code.tutsplus.com/tutorials/meet-grunt-the-build-tool-for-javascript--net-24856)
+[Grunt-init](http://gruntjs.com/project-scaffolding) is a scaffolding tool used to automate project creation. It will build an entire directory structure based on current environment and answers to some questions.
+```
+> npm install grunt-init --save-dev
+
+```
+Install Gruntfile scaffolding
+```
+> npm install grunt-init --save-dev
+> git clone https://github.com/gruntjs/grunt-init-gruntfile.git ~/.grunt-init/gruntfile
+> grunt-init gruntfile
+```
 Installing the CLI
 ```
-> npm install -g grunt-cli (-g stand to indicate that the installation is done globally)
+> npm install grunt-cli --save-dev (-g stand to indicate that the installation is done globally)
 ```
 Install the latest version of Grunt into project folder, adding it to the package.json devDependencies:
 ```
