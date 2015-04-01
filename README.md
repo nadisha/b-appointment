@@ -12,6 +12,8 @@
 * MongoDB
 * Angular
 * ExpressJs
+* HandlerbarJs
+* [Consolidate.js](https://www.npmjs.com/package/consolidate) - Template engine consolidation library
 
 ## Setup
 * Node.js - refer [Installing node.js on OSX 10.10 Yosemite](http://coolestguidesontheplanet.com/installing-node-js-on-osx-10-10-yosemite/)
@@ -74,6 +76,48 @@ Adding gruntplugins or other modules (i.e. installing the JSHint task module)
 > bower install angular --save
 ```
 
+### Directory Structure
+```
+app/
+----- shared/   // acts as reusable components or partials of our site
+---------- sidebar/
+--------------- sidebarDirective.js
+--------------- sidebarView.html
+---------- article/
+--------------- articleDirective.js
+--------------- articleView.html
+----- components/   // each component is treated as a mini Angular app
+---------- home/
+--------------- homeController.js
+--------------- homeService.js
+--------------- homeView.html
+---------- blog/
+--------------- blogController.js
+--------------- blogService.js
+--------------- blogView.html
+----- app.module.js // file will handle the setup of your app, load in AngularJS dependencies and so on
+----- app.routes.js // file will handle all the routes and the route configuration
+assets/
+----- img/      // Images and icons for your app
+----- css/      // All styles and style related files (SCSS or LESS files)
+----- js/       // JavaScript files written for your app that are not for angular
+----- libs/     // Third-party libraries such as jQuery, Moment, Underscore, etc.
+index.html
+```
+
+## ExpressJs Directory Structure
+```
+controllers/ – defines your app routes and their logic
+helpers/ – code and functionality to be shared by different parts of the project
+middlewares/ – Express middlewares which process the incoming requests before handling them down to the routes
+models/ – represents data, implements business logic and handles storage
+public/ – contains all static files like images, styles and javascript
+views/ – provides templates which are rendered and served by your routes
+tests/ – tests everything which is in the other folders
+app.js – initializes the app and glues everything together
+package.json – remembers all packages that your app depends on and their versions
+```
+
 ## [MEAN](http://mean.io/)
 Stands for Mongo, Express, Angular and Node
 
@@ -81,5 +125,8 @@ Stands for Mongo, Express, Angular and Node
 
 ## HTTP request logger  - [morgan](https://www.npmjs.com/package/morgan)
 
+
 ## Reference 
 * [Sample Demo](https://github.com/scotch-io/node-todo/tree/tut1-starter)
+* [Angularjs Directory Structure best practices](https://scotch.io/tutorials/angularjs-best-practices-directory-structure)
+* [Expressjs Directory structure best practices](http://www.terlici.com/2014/08/25/best-practices-express-structure.html)

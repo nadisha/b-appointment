@@ -1,0 +1,20 @@
+html(lang='en', ng-app="studentApp")
+  head
+    meta(charset='utf8')
+    title Angular Express Seed App
+    link(rel='stylesheet', href='/assets/libs/bootstrap/bootstrap.css')
+  body(ng-controller='StudentsListCtrl')
+    nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+      div.navbar-header
+      a.navbar-brand(href='#/students')= title
+    div.container
+      div(ng-view)
+
+    script(src='/assets/libs/angular/angular.js')
+    script(src='/assets/libs/angular-resource/angular-resource.js')
+    script(src='/assets/libs/angular-route/angular-route.js')
+    script(src='/assets/libs/bootstrap/bootstrap.js')
+    script(src='/assets/libs/query/jquery.js')
+    script(src='/app/app.module.js')
+    script(src='/app/components/studentController.js')
+    script(src='/app/components/studentService.js')
